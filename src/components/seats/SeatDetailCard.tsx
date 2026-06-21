@@ -1,6 +1,6 @@
 import { X, Eye, Footprints, Ruler, Star, AlertTriangle, Baby, Banknote, ChevronRight } from 'lucide-react';
 import { useSeatStore } from '@/store/seatStore';
-import { getSeatZoneLabel, formatPrice, getConvenienceStars, getRiskLabel } from '@/utils/seatUtils';
+import { getSeatZoneLabel, formatPrice, getRiskLabel } from '@/utils/seatUtils';
 import type { Seat } from '@/types';
 
 interface SeatDetailCardProps {

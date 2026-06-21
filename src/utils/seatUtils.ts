@@ -13,11 +13,9 @@ export function isSeatRecommended(seat: Seat, filters: SeatFilters): boolean {
     if (seat.childHeightMin && filters.childHeight < seat.childHeightMin) return false;
   }
 
-  if (filters.preferQuietZone && seat.zone !== 'quiet') {
-  }
+  if (filters.preferQuietZone && seat.zone !== 'quiet') return false;
 
-  if (seat.childHeightMin && filters.childHeight < seat.childHeightMin) {
-  }
+  if (seat.childHeightMin && filters.childHeight < seat.childHeightMin) return false;
 
   return true;
 }

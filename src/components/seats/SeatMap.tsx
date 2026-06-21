@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { useSeatStore } from '@/store/seatStore';
 import { getSeatZoneColor, isSeatRecommended } from '@/utils/seatUtils';
 import type { Seat } from '@/types';
-import { SEAT_ROWS, SEATS_PER_ROW_COUNT } from '@/data/mockSeats';
+import { SEAT_ROWS } from '@/data/mockSeats';
 import SeatLegend from './SeatLegend';
 
 interface SeatMapProps {
